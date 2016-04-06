@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <title>Lima</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">lima<img class="img-responsive" src="link/lima.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- <li class="page-scroll">
+                        <a href="#portfolio">Projects</a>
+                    </li -->>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="#application">Register Land</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#view">View Land</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="link/lima.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Lima<br>Rent || Farm || Earn</span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row" >
+           
+                <div class="col-lg-4">
+                    <p class="text-center">Lima is an online platform that allows rural land owners not making use of their lands to lease out to farmers enabling them to make money off their lands through payment of a minimum rent similarily enabling the farmer to earn a living through the sale of their crops </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <p class="text-center"></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <p class="text-center">RENT! FARM! EARN! </p>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <!--register land page -->
+    <section id="application">
+    <div class="container">
+            <div class="row" >
+                <div class="col-lg-12 text-center">
+                    <h2>REGISTER LAND</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    
+                    <form name="sentMessage" id="contactForm" novalidate onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Full Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Your Full Name : should correspond to the title deed name " id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter Your Phone Number: LIMA will not share this number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>ID Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter ID number" id="dinumber" required data-validation-required-message="Please enter your ID number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                          
+                         <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label class="required">Location</label>
+                                <input type="text" class="form-control" placeholder="land to lease location" id="location" required data-validation-required-message="Please enter land to lease location e.g Nyeri, Mabatini">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Minimum Rent</label>
+                                <input type="tel" class="form-control" placeholder="Enter minimum rent for lease. Price quoted is in Kenyan currency" id="mrent" required data-validation-required-message="Please enter minimum rent .">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    
+                        <br>
+                        <div id="success"></div>
+                        <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+                       
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg addStory" name="action" value="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- view lands -->
+    
+ 
+
+
+    <!-- Footer -->
+    <footer class="text-center" id = "contact">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Ngong Rd, Bishop Magua<br>Nairobi, Kenya</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Connect with us</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                           
+                          
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>credits </h3>
+                        <p>developer: DekreeApps download app at:google play store </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; dekreeApp
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+    
+    <!--Firebase App -->
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script>
+      var myDataRef = new Firebase('https://LimawebAPP.firebaseio.com/');
+            //Create holder array for object
+        var entryRef = myDataRef.lima('lands');
+          entryRef.on(" lima_added", function(snap) {
+            console.log("added", snap.key, snap.val());
+          });
+
+         //save Form
+          document.querySelector('.send').addEventListener("click", function( event ) {  
+            event.preventDefault();
+            if(document.querySelector('#name').value != '' || document.querySelector('#email').value != '' ){
+              entryRef
+                .push({
+                  name: document.querySelector('#name').value,
+                  email: document.querySelector('#email').value,
+                  phoneNo: document.querySelector('#phone').value,
+                  idNumber: document.querySelector('#dinumber').value,
+                  location: document.querySelector ('#location').value,
+                  minimumrent: document.querySelector('#mrent').value
+                  
+                })
+                sentMessage.reset();
+            } else {
+              alert('Please fill in Your Full Details!');
+            }
+          }, false);
+
+    </script> 
+</body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li><span>Ad Type : </span><b>Offering</b></li>
+                                                                                                                                                                                                                            </
+
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="cl_list_des clear">12Ha flat piece of fertile land located 2kilometres from Bondo town adjascent to Bondo Polytechnic.It is accessible since the road leading to it is Tamarc.Not far from</
